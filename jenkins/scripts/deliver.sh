@@ -10,7 +10,7 @@ set +x
 #copy build files to prod folder at /var/www/
 set -x
 CONTAINER_ID=$(docker ps -alq)
-docker cp "CONTAINER_ID":/var/jenkins_home/workspace/Red.Squadron.io.Deploy/build/ /var/www/
+docker cp "$CONTAINER_ID":/var/jenkins_home/workspace/Red.Squadron.io.Deploy/build/ /var/www/
 set +x
 
 #echo 'The following "npm" command runs your Node.js/React application in'
