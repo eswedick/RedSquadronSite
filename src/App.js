@@ -1,9 +1,10 @@
 import squadron from './logos/red_squadron_unit_patch.png';
 import overseer from './logos/overseerr_logo.svg'
 import plex from './logos/plex-logo-transparent.png';
-import discord from './logos/discord_icon.svg';
-import telegram from './logos/telegram-icon.svg';
+//import discord from './logos/discord_icon.svg';
+//import telegram from './logos/telegram-icon.svg';
 import './App.css';
+
 
 function App() {
   return (
@@ -32,13 +33,20 @@ function App() {
                   </div>
 
                   <div className="row g-5 pt-5">
-                      <div className="col-md-6 mb-3">
+{/*                      <div className="col-md-6 mb-3">
                           <h2>Get notifications!</h2>
                           <p>We can notify you when requests are available through Discord or Telegram</p>
                           <ul className="icon-list ps-0">
                               <li className="d-flex align-items-start mb-1"><a href="https://overseerr.redsquadron.io/profile/settings/notifications/discord/"><img src={discord} alt='discord' style={{marginRight:3}}/>Discord</a></li>
                               <li className="d-flex align-items-start mb-1"><a href="https://overseerr.redsquadron.io/profile/settings/notifications/telegram/"><img src={telegram} alt='telegram' style={{marginRight:3}} height='22px'/>Telegram</a></li>
                           </ul>
+                      </div>*/}
+                      <div className="col-md-6 mb-3">
+                          <h2>Play Minecraft?</h2>
+                          <p>Join us on our private server! Send an email with your username to request whitelist</p>
+                          <span className="text-muted">Click&nbsp;
+                              <a href="mailto: redleader@redsquadron.io?body=I wanna play minecraft! My minecraft username is:">HERE</a>
+                              &nbsp;to contact Red Leader</span>
                       </div>
                       <div className="col-md-6 mb-3">
                           <h2>Join the Squadron!</h2>
@@ -53,7 +61,7 @@ function App() {
           <footer className="footer mt-auto py-3 join-the-squadron">
               <div className="container">
                   <span className="text-muted">
-                      &copy; Red Squadron Media 2022
+                      &copy; Red Squadron 2022
                   </span>
               </div>
           </footer>
